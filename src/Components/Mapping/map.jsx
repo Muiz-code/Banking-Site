@@ -12,7 +12,7 @@ export const hero = [
   {
     id: 1,
     comp1GenDiv:
-      " flex justify-center px-[70px] place-items-center relative h-screen",
+      " flex justify-center px-[70px] place-items-center relative h-screen text-[#0A221C]",
     container: "w-[100%] place-items-center",
     headingDiv: "w-[100%] flex flex-col gap-3 relative h-screen justify-center",
     h1style1: "text-[62px] font-bold w-[100%] font2",
@@ -46,7 +46,8 @@ export const hero = [
 export const content1 = [
   {
     id: 1,
-    comp1GenDiv: " flex justify-center px-[70px] place-items-center relative",
+    comp1GenDiv:
+      " flex justify-center px-[70px] place-items-center relative text-[#0A221C]",
     container: "w-[100%] place-items-center",
     headingDiv: "w-[100%] flex flex-col gap-3",
     h1style1: "text-[62px] font-bold w-[100%] font2",
@@ -61,7 +62,7 @@ export const content1 = [
     imgDiv: "w-[100%]",
     img: img2,
     imgStyle: " w-[100%]",
-    data1: "fade-right",
+    data1: "fade-left",
     offset: "100",
     ease: "ease-in-sine",
     data2: "zoom-in-right",
@@ -74,9 +75,10 @@ export const content1 = [
     comp1GenDiv: " flex justify-center px-[70px] place-items-center w-[100%]",
     container: "w-[100%] flex place-items-center",
     headingDiv: "w-[100%] flex flex-col gap-3",
-    h1style1: "text-[62px] font-bold w-[100%] font2",
-    h1style2: "text-[#FFBD50]",
-    heading: "Community Rotating Savings (CRS)",
+    h1style1: "text-[62px] text-[#0A221C] font-bold w-[100%] font2",
+    h1style2: "text-[#F67449]",
+    heading: "Enjoy Alternative ",
+    heading2: "Finance with Faysal",
     paragraph:
       "Collectively save money in group of similar cooperative significance and rotate collection.  Join a group of SMEs and individuals of big corporations that pool money to rotate a lump sum contribution as microcredit for other members.",
     pStyle: "text-[18px] w-[70%]",

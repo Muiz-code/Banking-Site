@@ -7,6 +7,8 @@ import Component2 from "../Components/Component2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import atmimg1 from "../assets/images/atms.png";
+import atmimg2 from "../assets/images/atm2.png";
 
 const Landingpage = () => {
   useEffect(() => {
@@ -37,10 +39,12 @@ const Landingpage = () => {
           <Component1 key={items.id} {...items} style={items.style} />
         ))}
       </div>
-      <div className="px-[70px] py-5 flex flex-col gap-5">
-        <div className="font2">
-          <h1 className="text-[48px] font-bold">Explore Features</h1>
-          <p className="text-[18px]">
+      <div className="px-[70px] py-5 flex flex-col gap-[70px]">
+        <div className="font2 flex flex-col gap-3">
+          <h1 className="text-[48px] font-bold text-[#0A221C]">
+            Explore Features
+          </h1>
+          <p className="text-[18px] text-[#0A221C]">
             We have everything you need for your financial freedom
           </p>
         </div>
@@ -50,10 +54,47 @@ const Landingpage = () => {
               <Component2 key={items.id} {...items} style={items.style} />
             ))}
           </div>
-          <div className="flex justify-between">
+          <div
+            className="flex justify-between"
+            data-aos="zoom-in"
+            data-aos-offset="100"
+          >
             {cards2.map((items) => (
               <Component2 key={items.id} {...items} style={items.style} />
             ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="px-[70px] py-5 flex flex-col gap-[50px]">
+        <div>
+          <h1 className="text-[#0A221C] text-[24px] font-[700]">
+            Faysal Cards
+          </h1>
+        </div>
+        <div className="flex gap-3">
+          <div
+            className=" bg-[#F9F9F9] w-[50%] shadow-lg rounded-lg"
+            data-aos="zoom-in"
+          >
+            <div className="triangle p-5 flex flex-col gap-4 ">
+              <h1 className="text-[48px] font-[400]">
+                You are entitled to the magical Faysal Card
+              </h1>
+              <p className="text-[18px] text-[#5B5B5B]">
+                Our Cards are built with high-end secutity infrastructure to
+                ensure maximum privacy is provided and ultimately that you will
+                never have to panick
+              </p>
+              <img src={atmimg1} className="w-[100%]" alt="" />
+            </div>
+          </div>
+          <div
+            className=" bg-[#FFF3E0] w-[50%] p-5 shadow-lg rounded-lg"
+            data-aos="zoom-in"
+            data-aos-offset="200"
+          >
+            <img src={atmimg2} className="w-[100%]" alt="" />
           </div>
         </div>
       </div>
