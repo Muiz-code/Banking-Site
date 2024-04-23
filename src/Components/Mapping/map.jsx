@@ -7,6 +7,10 @@ import save from "../../assets/images/savings.png";
 import invest from "../../assets/images/investment.png";
 import pay from "../../assets/images/payments.png";
 import community from "../../assets/images/community.png";
+import apple from "../../assets/images/Apple logo.png";
+import google from "../../assets/images/Google play Logo.png";
+import img4 from "../../assets/images/qrPhone.png";
+import img5 from "../../assets/images/posMan.png";
 
 export const hero = [
   {
@@ -177,5 +181,45 @@ export const cards2 = [
     txt2Style: "absolute bottom-1 right-3 text-[#C1C1C1] cursor-pointer",
     text2: "Learn More",
     linkTo: "",
+  },
+];
+export const cards3 = [
+  {
+    id: 1,
+    comp3Style: "bg-[#FFEFE8] shadow rounded-lg",
+    comp3Style2: "p-5 flex w-[100%] place-items-center triangle2 ",
+    txtContainer: " w-[100%] flex flex-col gap-3",
+    h1txtStyle: "text-[45px] text-[#E86B35]",
+    h1txt: "Faysal is available on Mobile. Start Saving Today",
+    ptxtStyle: "text-[18px] text-[#5B5B5B] w-[80%]",
+    ptxt: "Our Cards are built with high-end secutity infrastructure to ensure maximum privacy is provided and ultimately that you will never have to panic",
+    btndivStyle: "flex gap-5",
+    btn1: "bg-black p-2 gap-3 text-[#FFFFFF] text-[18px] flex place-items-center rounded-lg w-[25%] justify-center hover:scale-105 duration-300",
+    btn2: "bg-black p-2 gap-3 text-[#FFFFFF] text-[18px] flex place-items-center rounded-lg w-[25%] justify-center hover:scale-105 duration-300",
+    icon: apple,
+    iconStyle: "w-[20%]",
+    btntxt: "App Store",
+    icon2: google,
+    iconStyle2: "w-[20%]",
+    btntxt2: "Google Play",
+    imgDiv: "w-[50%] flex justify-center",
+    imgStyle: "bg-[#FFE7DD] px-4 pb-4 w-[80%] rounded-lg",
+    img: img4,
+  },
+  {
+    id: 2,
+    comp3Style: "bg-[#0A221C] shadow rounded-lg",
+    comp3Style2: "p-5 flex w-[100%] place-items-center triangle3 ",
+    txtContainer: " w-[100%] flex flex-col gap-3",
+    h1txtStyle: "text-[45px] text-[#FFF3E0]",
+    h1txt: "Earn more as a remote agent with Faysal",
+    ptxtStyle: "text-[18px] text-[#FFF3E0] w-[80%]",
+    ptxt: "Grow your agency banking business with the inclusion of microcredit collection, thrift and ajo or esusu or adashe rotating savings.",
+    btndivStyle: "flex gap-5",
+    btn1: "bg-[#FFBD50] p-[12px] gap-3 text-[#000] text-[18px] flex place-items-center rounded-lg w-[35%] justify-center hover:scale-105 duration-300",
+    btntxt: "Become an Agent",
+    imgDiv: "w-[50%] flex justify-center",
+    imgStyle: "bg-[#FFF3E0] px-4 pb-4 w-[80%] rounded-lg",
+    img: img5,
   },
 ];

@@ -1,5 +1,11 @@
 import Component1 from "../Components/Component1";
-import { cards, cards2, content1, hero } from "../Components/Mapping/map";
+import {
+  cards,
+  cards2,
+  cards3,
+  content1,
+  hero,
+} from "../Components/Mapping/map";
 import Menubar from "../Components/Menubar";
 import ndic from "../assets/images/NDIC.png";
 import cbn from "../assets/images/CBN.png";
@@ -9,6 +15,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import atmimg1 from "../assets/images/atms.png";
 import atmimg2 from "../assets/images/atm2.png";
+import Component3 from "../Components/Component3";
 
 const Landingpage = () => {
   useEffect(() => {
@@ -19,11 +26,13 @@ const Landingpage = () => {
       <div>
         <Menubar />
       </div>
+
       <div className="bg-[#E86135]">
         {hero.map((items) => (
           <Component1 key={items.id} {...items} style={items.style} />
         ))}
       </div>
+
       <div className="w-screen flex justify-center place-items-center bg-[#FFFFFF] p-3">
         <div className="flex place-items-center gap-3">
           <p>Insured by:</p>
@@ -34,11 +43,13 @@ const Landingpage = () => {
           <img src={cbn} className="w-[20%]" alt="" />
         </div>
       </div>
+
       <div className="bg-[#F8F8F8] flex flex-col gap-5 py-5">
         {content1.map((items) => (
           <Component1 key={items.id} {...items} style={items.style} />
         ))}
       </div>
+
       <div className="px-[70px] py-5 flex flex-col gap-[70px]">
         <div className="font2 flex flex-col gap-3">
           <h1 className="text-[48px] font-bold text-[#0A221C]">
@@ -74,7 +85,7 @@ const Landingpage = () => {
         </div>
         <div className="flex gap-3">
           <div
-            className=" bg-[#F9F9F9] w-[50%] shadow-lg rounded-lg"
+            className=" bg-[#F9F9F9] w-[50%] shadow2 rounded-lg"
             data-aos="zoom-in"
           >
             <div className="triangle p-5 flex flex-col gap-4 ">
@@ -90,13 +101,19 @@ const Landingpage = () => {
             </div>
           </div>
           <div
-            className=" bg-[#FFF3E0] w-[50%] p-5 shadow-lg rounded-lg"
+            className=" bg-[#FFF3E0] w-[50%] p-5 shadow2 rounded-lg"
             data-aos="zoom-in"
             data-aos-offset="200"
           >
             <img src={atmimg2} className="w-[100%]" alt="" />
           </div>
         </div>
+      </div>
+
+      <div className="px-[70px] py-5 flex flex-col gap-[70px]">
+        {cards3.map((items) => (
+          <Component3 key={items.id} {...items} style={items.style} />
+        ))}
       </div>
     </div>
   );

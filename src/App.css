@@ -29,3 +29,20 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.triangle2 {
+  background: url(./assets/images/Vector.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: top 0% left 0%;
+}
+.triangle3 {
+  background: url(./assets/images/Vector1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.shadow2 {
+  box-shadow: 0px 0px 16px 10px #5b5b5b0f;
+}
+.shadow {
+  box-shadow: 0px 7px 14px 3px #acacac1f;
+}
